@@ -12,7 +12,7 @@ COPY . /var/www/html
 # Pindah ke folder Laravel
 WORKDIR /var/www/html
 
-# Install Composer
+# Install Composerr
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 RUN composer install --no-interaction --prefer-dist
 
